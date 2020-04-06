@@ -1,18 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
-<style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><style type="text/css">  
 	.st0{display:none;fill:#C69C6D;}
 	.st1{fill:#FF3700;}
 	.st2{fill:#8400FE;}
 	.st3{fill:#FFFFFF;}
 	.st4{fill:#FBAE17;}
-</style>
-<polygon points="300,150 150,300 150,150 "/>
-<rect x="75" y="-75" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 225 -75)" class="st2" width="150" height="300"/>
-<circle class="st4" cx="150" cy="150" r="150"/>
-<circle class="st1" cx="150" cy="150" r="92"/>
-<rect x="75" y="75" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 375 75)" class="st3" width="150" height="300"/>
-<polygon points="0,300 300,300 150,150 "/>
-</svg>
+</style><polygon points="300 150 150 300 150 150 "/><rect x="75" y="-75" transform="matrix(-1.83697e-16 1 -1 -1.83697e-16 225 -75)" class="st2" width="150" height="300"/><circle class="st4" cx="150" cy="150" r="150"/><circle class="st1" cx="150" cy="150" r="92"/><rect x="75" y="75" transform="matrix(-1.83697e-16 1 -1 -1.83697e-16 375 75)" class="st3" width="150" height="300"/><polygon points="0 300 300 300 150 150 "/></svg>

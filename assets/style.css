@@ -75,13 +75,9 @@ nav li a:hover {
 }
 
 .shop-item-img {
-  width: 100px;
-  height: 100px;
-}
-
-.cart-item-img {
-  width: 30px;
-  height: 30px;
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .shadow {
@@ -133,4 +129,135 @@ footer .logo:hover {
 
 .flex {
   display: flex;
+}
+
+.shop-items {
+  margin: 30px;
+}
+
+.item-title {
+  display: block;
+  width: 100%;
+  margin-block-end: 20px;
+}
+
+.item-details {
+  display: flex;
+  /* align-items: center; */
+  padding: 5px;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item-price,
+.item-button {
+  margin: 0 5px;
+}
+
+.cart-header {
+  font-weight: bold;
+}
+
+.cart-column {
+  display: flex;
+  border-bottom: 1px solid #d7d1e4;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item,
+.cart-price,
+.cart-quantity,
+.cart-item-title {
+  font-size: 1.2em;
+  color: #332d39;
+}
+.cart-item-title {
+  margin-left: 0.5em;
+}
+.cart-item-img {
+  width: 75px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.btn {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+  border-radius: 5%;
+  border: 1px solid #332d39;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary,
+.item-button {
+  background-color: #8402fe;
+}
+
+.btn-danger {
+  background-color: #ff3701;
+}
+
+input {
+  height: 30px;
+  width: 50px;
+  border-radius: 5%;
+  border: 1px solid #332d39;
+  background-color: #eee;
+  color: #332d39;
+  padding: 0;
+  text-align: center;
+  margin-right: 25px;
+}
+
+/* .cart-row:last-child {
+  border-bottom: 1px solid #332d39;
+} */
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* .cart-total-title {
+  margin-right: 20px;
+} */
+
+.cart-total-price {
+  color: #332d39;
 }

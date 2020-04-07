@@ -4,7 +4,7 @@
 * {
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
-  color: #9b9faf;
+  color: #d7d1e4;
 }
 
 html,
@@ -14,14 +14,60 @@ body {
   min-height: 100%;
 }
 
+.main-header {
+  margin-top: 0px;
+  background-color: white;
+  /* background-size: cover; */
+  padding-bottom: 30px;
+}
+
 .logo {
   font-family: "Titillium Web", sans-serif;
   font-weight: 200;
+  color: #8402fe;
+  text-align: center;
+  padding-top: 30px;
+  margin-block-start: 0;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+nav li .active,
+nav li a:hover {
+  color: #8402fe;
+}
+
+.main-nav {
+  text-align: center;
 }
 
 .shop-item-img {
   width: 100px;
   height: 100px;
+}
+
+.cart-item-img {
+  width: 30px;
+  height: 30px;
+}
+
+.shadow {
   -webkit-box-shadow: 1px 2px 16px -3px rgba(222, 215, 222, 1);
   -moz-box-shadow: 1px 2px 16px -3px rgba(222, 215, 222, 1);
   box-shadow: 1px 2px 16px -3px rgba(222, 215, 222, 1);
@@ -30,3 +76,12 @@ body {
 /* i {
   background-size: 20px 20px;
 } */
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-content: center;
+  justify-content: center;
+}

@@ -23,8 +23,9 @@ function updateCartTotal() {
     let priceElement = cartRow.getElementsByClassName("cart-price")[0]
     let quantityElement = cartRow.getElementsByClassName("cart-quantity-input")[0]
     // console.log(priceElement, quantityElement)
-    let price = priceElement.innerText.replace("€", "")
-    console.log(price)
+    let price = parseFloat(priceElement.innerText.replace("€", ""))
+    let quantity = quantityElement.value
+    console.log(price * quantity)
 
   }
 }

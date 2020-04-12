@@ -8,9 +8,14 @@ function ready() {
   let removeCartItemButtons = document.getElementsByClassName("btn-danger")
   for (let i = 0; i < removeCartItemButtons.length; i += 1) {
     let button = removeCartItemButtons[i]
-
     button.addEventListener('click', removeCartItem)
   }
+  let quantityInputs = document.getElementsByClassName("cart-quantity-input")
+  for (let i = 0; i < quantityInputs.length; i += 1) {
+    let input = quantityInputs[i]
+    input.addEventListener('change', quantityChanged)
+  }
+  // let addToCartButtons = document.getElementsByClassName("item-button")
 }
 
 function removeCartItem(event) {
@@ -19,7 +24,15 @@ function removeCartItem(event) {
   updateCartTotal()
 }
 
+function quantityChanged(event) {
+  let input = event.target
+  if (isNaN(input.value) || input.value <= 0) {
+    input.value = 1
+  } else {
+    updateCartTotal()
+  }
 
+}
 
 function updateCartTotal() {
   let cartItemContainer = document.getElementsByClassName("cart-items")[0]
@@ -36,5 +49,6 @@ function updateCartTotal() {
     // console.log(price * quantity)
     total = total + (price * quantity)
   }
+  total = (Math.round(total * 100) / 100).toFixed(2)
   document.getElementsByClassName("cart-total-price")[0].innerText = "€" + total
 }

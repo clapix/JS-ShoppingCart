@@ -15,7 +15,11 @@ function ready() {
     let input = quantityInputs[i]
     input.addEventListener('change', quantityChanged)
   }
-  // let addToCartButtons = document.getElementsByClassName("item-button")
+  let addToCartButtons = document.getElementsByClassName("item-button")
+  for (let i = 0; i < addToCartButtons.length; i += 1) {
+    let button = addToCartButtons[i]
+    button.addEventListener("click", addToCartClicked)
+  }
 }
 
 function removeCartItem(event) {
@@ -31,7 +35,15 @@ function quantityChanged(event) {
   } else {
     updateCartTotal()
   }
+}
 
+function addToCartClicked(event) {
+  let button = event.target
+  let ShopItem = button.parentElement.parentElement
+  let title = ShopItem.getElementsByClassName("item-title")[0].innerText
+  let price = ShopItem.getElementsByClassName("item-price")[0].innerText
+  let image = ShopItem.getElementsByClassName("shop-item-img")[0].src
+  // console.log(title, price, image)
 }
 
 function updateCartTotal() {

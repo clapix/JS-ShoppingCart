@@ -43,7 +43,7 @@ function addToCartClicked(event) {
   let title = ShopItem.getElementsByClassName("item-title")[0].innerText
   let price = ShopItem.getElementsByClassName("item-price")[0].innerText
   let imageSrc = ShopItem.getElementsByClassName("shop-item-img")[0].src
-  console.log(title, price, imageSrc)
+  // console.log(title, price, imageSrc)
   addItemToCart(title, price, imageSrc)
 }
 
@@ -58,8 +58,6 @@ function addItemToCart(title, price, imageSrc) {
       return
     }
   }
-
-
   let cartRowContents = `
     <div class="cart-column cart-item">
       <img
@@ -77,8 +75,8 @@ function addItemToCart(title, price, imageSrc) {
       </button>
     </div>`
   cartRow.innerHTML = cartRowContents
-
   cartItems.append(cartRow)
+  cartRow.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
 }
 
 function updateCartTotal() {
